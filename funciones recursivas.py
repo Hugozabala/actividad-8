@@ -1,4 +1,4 @@
-def menu ()
+def menu ():
     print("menu principal")
     print("1. factorial de un numero")
     print("2. suma de dos numeros")
@@ -10,13 +10,16 @@ def menu ()
 
 
 def factorial(n):
-
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+menu()
 op=int(input("ingrese que opción desea ejecutar"))
 if op==1:
     num =int(input("ingrese numero"))
+    factorial(num)
+    print(factorial(num))
 
-elif op ==2:
-
-elif op ==3:
 
 
