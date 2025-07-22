@@ -1,7 +1,7 @@
 def menu ():
     print("menu principal")
     print("1. factorial de un numero")
-    print("2. suma de dos numeros")
+    print("2. suma de numeros naturales hasta n ")
     print("3. fibonacci de un numero")
     print("4. cuantas veces aparece una letra en una palabra")
     print("5. invertir una cadena")
@@ -14,6 +14,10 @@ def factorial(n):
         return 1
     else:
         return n * factorial(n-1)
+
+def potencia(base, exponente):
+
+    return base*exponente(base,exponente-1)
 menu()
 op=int(input("ingrese que opción desea ejecutar"))
 if op==1:
@@ -21,5 +25,24 @@ if op==1:
     factorial(num)
     print(factorial(num))
 
+elif op==2:
+    num1=int(input("ingrese numero 1"))
 
+elif op==3:
+    num2=int(input("ingrese numero 2"))
+
+elif op==4:
+    num3=int(input("ingrese numero 3"))
+elif op==5:
+    num4=int(input("ingrese numero 4"))
+
+elif op==6:
+    num5=int(input("ingrese numero base"))
+    num6=int(input("ingrese numero exponente"))
+    potencia(num5,num6)
+    print(potencia(num5,num6))
+
+elif op==7:
+    print("salir del programa")
+    exit()
 
