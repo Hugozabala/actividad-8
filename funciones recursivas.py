@@ -15,9 +15,15 @@ def factorial(n):
     else:
         return n * factorial(n-1)
 
-def potencia(base, exponente):
+def suma_numero (num):
+    if num ==1:
+        return 1
+    else:
+        return num + suma_numero(num-1)
 
-    return base*exponente(base,exponente-1)
+
+
+
 menu()
 op=int(input("ingrese que opción desea ejecutar"))
 if op==1:
@@ -27,6 +33,8 @@ if op==1:
 
 elif op==2:
     num1=int(input("ingrese numero 1"))
+    suma_numero(num1)
+    print(suma_numero(num1))
 
 elif op==3:
     num2=int(input("ingrese numero 2"))
