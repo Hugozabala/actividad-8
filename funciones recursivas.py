@@ -20,7 +20,13 @@ def suma_numero (num):
         return 1
     else:
         return num + suma_numero(num-1)
-
+def fibonacci(n):
+    if n == 0:
+        return 1
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
 
 
 
@@ -37,7 +43,9 @@ elif op==2:
     print(suma_numero(num1))
 
 elif op==3:
-    num2=int(input("ingrese numero 2"))
+    num2=int(input("ingrese un  numero"))
+    fibonacci(num2)
+    print(fibonacci(num2))
 
 elif op==4:
     num3=int(input("ingrese numero 3"))
